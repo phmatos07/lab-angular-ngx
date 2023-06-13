@@ -1,2 +1,2 @@
-# lab-angular-nx
-Projeto particular de Onepage usando o NX para gerar uma estrutura com a framework Angular.
+# lab-angular-ngx
+Projeto simples com o foco em estudo para analisar/implementar novas features das versões do Angular
