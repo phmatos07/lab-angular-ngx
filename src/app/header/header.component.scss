@@ -1,0 +1,23 @@
+.toolbar {
+  &__button {
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: transparent;
+
+    &:hover {
+      background-color: #6b7de2;
+      transition: background-color 0.3s ease-in-out;
+    }
+  }
+
+  &__icon {
+    color: white;
+  }
+
+  &__spacer {
+    margin: {
+      left: 0.5rem;
+      right: 0.5rem;
+    }
+  }
+}
