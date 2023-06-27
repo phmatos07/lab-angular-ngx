@@ -7,8 +7,8 @@ export const ROUTES: Routes = [
     loadComponent: () => import('./pages/home/home.component').then(mod => mod.HomeComponent)
   },
   {
-    path: 'teste',
-    title: 'Teste',
-    loadComponent: () => import('./pages/teste/teste.component').then(mod => mod.TesteComponent)
+    path: 'stack-traces',
+    title: 'Stack Traces',
+    loadComponent: () => import('./pages/stack-traces/stack-traces.component').then(mod => mod.StackTracesComponent)
   },
 ];

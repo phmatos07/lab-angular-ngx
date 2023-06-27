@@ -1,15 +1,18 @@
 <lab-header (toggleSidenav)="toggleSidenav = $event"></lab-header>
 
-<mat-drawer-container autosize>
+<mat-drawer-container
+  autosize
+  class="drawer-container"
+>
   <mat-drawer
-    class="example-sidenav"
+    class="drawer-container__sidenav"
     mode="side"
     [opened]="toggleSidenav"
   >
     <lab-sidenav></lab-sidenav>
   </mat-drawer>
 
-  <mat-drawer-content>
+  <mat-drawer-content class="drawer-container__content">
     <router-outlet></router-outlet>
   </mat-drawer-content>
 
