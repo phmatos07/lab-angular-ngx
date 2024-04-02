@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Output, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { ResourceIdDirective } from '../directives/resource-id.directive';
 import { PROJECT_NAME } from '../models/default-data.const';
 
 @Component({
@@ -8,7 +9,8 @@ import { PROJECT_NAME } from '../models/default-data.const';
   standalone: true,
   imports: [
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    ResourceIdDirective
   ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']

@@ -1,8 +1,13 @@
 <section>
-  <h4>{{ TITLE }}</h4>
+  <h4
+    [idQa]="'title_page_stack_traces'"
+    [idQaAction]="'read'"
+  > {{ TITLE }}
+  </h4>
   <p>Clique no botão para gerar um erro e analisar como a pilha erros está sendo mostrada no console.</p>
 
   <button
+    [idQa]="'button_throw_error'"
     mat-raised-button
     color="warn"
     (click)="throwError(TITLE)"
