@@ -1,6 +1,7 @@
 <mat-nav-list>
-  <mat-list-item *ngFor=" let route of ROUTES">
+  <mat-list-item *ngFor=" let route of ROUTES;">
     <a
+      [idQa]="getElementName(route.path)"
       matListItemTitle
       routerLink="{{ route.path }}"
       routerLinkActive="active"
