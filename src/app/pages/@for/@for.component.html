@@ -1,0 +1,8 @@
+@for (item of list(); track item.title) {
+    <section class="item">
+        <h4>{{ item.title }}</h4>
+        <p>{{ item.text }}</p>
+    </section>
+} @empty {
+    <p>Não há itens.</p>
+}

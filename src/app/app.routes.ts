@@ -8,7 +8,12 @@ export const ROUTES: Routes = [
   },
   {
     path: 'stack-traces',
-    title: 'Stack Traces',
+    title: 'Rastreamento de Erros',
     loadComponent: () => import('./pages/stack-traces/stack-traces.component').then(mod => mod.StackTracesComponent)
+  },
+  {
+    path: 'control-flow',
+    title: 'Controle de Fluxo',
+    loadComponent: () => import('./pages/@for/@for.component').then(mod => mod.ForComponent)
   },
 ];
