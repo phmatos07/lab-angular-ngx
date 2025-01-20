@@ -1,0 +1,37 @@
+<section class="if">
+  <h4>Defina os valores no campos</h4>
+
+  <div class="if__form">
+    <mat-form-field>
+      <mat-label>Input Value 01</mat-label>
+      <input matInput [(ngModel)]="value01" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Input Value 02</mat-label>
+      <input matInput [(ngModel)]="value02" />
+    </mat-form-field>
+  </div>
+
+  <div class="if__result">
+    <h4>Resultado da verificação</h4>
+
+    @if (value01 > value02) {
+    <p>
+      O valor da propriedade <strong>value01</strong> ({{ value01 }}) é maior
+      que da propriedade <strong>value02</strong> ({{ value02 }})
+    </p>
+    } @else if (value02 > value01 ) {
+    <p>
+      O valor da propriedade <strong>value02</strong> ({{ value02 }}) é maior
+      que da propriedade <strong>value01</strong> ({{ value01 }})
+    </p>
+    } @else {
+    <p>Valor de amabas propriedade são iguais</p>
+    <ul>
+      <li><strong>VALUE 01:</strong> {{ value01 }}</li>
+      <li><strong>VALUE 02:</strong> {{ value02 }}</li>
+    </ul>
+    }
+  </div>
+</section>

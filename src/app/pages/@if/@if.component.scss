@@ -1,0 +1,23 @@
+.if {
+  h4 {
+    font-weight: 700;
+  }
+
+  &__form {
+    display: flex;
+    align-items: flex-start;
+
+    mat-form-field {
+      width: 300px;
+      margin-right: 1rem;
+    }
+  }
+
+  &__result {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #b0b0b0;
+    border-radius: 0.25rem;
+    background-color: #e0e0e0;
+  }
+}
