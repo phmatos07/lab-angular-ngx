@@ -35,4 +35,10 @@ export const ROUTES: Routes = [
     loadComponent: () =>
       import('./pages/@if/@if.component').then((mod) => mod.IfComponent),
   },
+  {
+    path: 'let',
+    title: '@let',
+    loadComponent: () =>
+      import('./pages/@let/@let.component').then((mod) => mod.LetComponent),
+  },
 ];
