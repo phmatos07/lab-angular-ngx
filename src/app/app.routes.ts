@@ -16,6 +16,14 @@ export const ROUTES: Routes = [
       ),
   },
   {
+    path: 'defer',
+    title: '@defer',
+    loadComponent: () =>
+      import('./pages/@defer/@defer.component').then(
+        (mod) => mod.DeferComponent
+      ),
+  },
+  {
     path: 'for',
     title: '@for',
     loadComponent: () =>
