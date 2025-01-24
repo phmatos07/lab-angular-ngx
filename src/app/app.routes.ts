@@ -41,4 +41,10 @@ export const ROUTES: Routes = [
     loadComponent: () =>
       import('./pages/@let/@let.component').then((mod) => mod.LetComponent),
   },
+  {
+    path: 'switch',
+    title: '@switch',
+    loadComponent: () =>
+      import('./pages/@switch/@switch.component').then((mod) => mod.SwitchComponent),
+  }
 ];
