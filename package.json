@@ -7,7 +7,11 @@
     "start:ws": "http-server -p 8080 -c-1 dist/lab-angular-ngx",
     "build": "ng build",
     "build:watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "dev:ssr": "ng run lab-angular-ngx:serve-ssr",
+    "serve:ssr": "node dist/lab-angular-ngx/server/main.js",
+    "build:ssr": "ng build && ng run lab-angular-ngx:server",
+    "prerender": "ng run lab-angular-ngx:prerender"
   },
   "dependencies": {
     "@angular/animations": "^18.2.13",
@@ -19,8 +23,11 @@
     "@angular/material": "^18.2.14",
     "@angular/platform-browser": "^18.2.13",
     "@angular/platform-browser-dynamic": "^18.2.13",
+    "@angular/platform-server": "^18.2.13",
     "@angular/router": "^18.2.13",
     "@angular/service-worker": "^18.2.13",
+    "@angular/ssr": "^18.2.12",
+    "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "^0.14.10"
@@ -29,7 +36,10 @@
     "@angular-devkit/build-angular": "^18.2.12",
     "@angular/cli": "~18.2.12",
     "@angular/compiler-cli": "^18.2.13",
+    "@types/express": "^4.17.17",
     "@types/jasmine": "~4.3.0",
+    "@types/node": "^18.18.0",
+    "browser-sync": "^3.0.0",
     "http-server": "^14.1.1",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",

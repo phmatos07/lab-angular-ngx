@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/lab-angular-ngx",
+            "outputPath": "dist/lab-angular-ngx/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -110,6 +110,61 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/lab-angular-ngx/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json",
+            "inlineStyleLanguage": "scss"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@angular-devkit/build-angular:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "lab-angular-ngx:build:development",
+              "serverTarget": "lab-angular-ngx:server:development"
+            },
+            "production": {
+              "browserTarget": "lab-angular-ngx:build:production",
+              "serverTarget": "lab-angular-ngx:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "lab-angular-ngx:build:production",
+              "serverTarget": "lab-angular-ngx:server:production"
+            },
+            "development": {
+              "browserTarget": "lab-angular-ngx:build:development",
+              "serverTarget": "lab-angular-ngx:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
