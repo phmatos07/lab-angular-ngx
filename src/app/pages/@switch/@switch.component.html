@@ -1,0 +1,18 @@
+<section class="type-person">
+
+    <h4>Tipo Pessoa</h4>
+
+    @switch (typePerson) {
+        @case ('FISICA') {
+            <p>Pessoal Física</p>
+        }
+        @case ('JURIDICA') {
+            <p>Pessoal Jurídica</p>
+        }
+        @default {
+            <p>Sem definição</p>
+        }
+    }
+
+    <p>Tempo até mudar o tipo {{ time / 1000 }}s</p>
+</section>

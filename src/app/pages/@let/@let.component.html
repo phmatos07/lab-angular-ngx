@@ -1,0 +1,9 @@
+@let users = users$ | async;
+
+@if (users) {
+    <ul>
+    @for (user of users; track trackBy) {
+        <li>Hello, {{ user.name }} {{ user.surname }}</li>
+    }
+    </ul>
+}
