@@ -1,11 +1,12 @@
 
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { TypePersontEnum } from './type-client.enum';
 
 @Component({
     imports: [],
     selector: 'switch',
     templateUrl: './@switch.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./@switch.component.scss']
 })
 export class SwitchComponent implements OnInit {

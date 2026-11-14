@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
@@ -10,6 +10,7 @@ import { ResourceIdDirective } from '../directives/resource-id.directive';
     selector: 'lab-sidenav',
     templateUrl: './sidenav.component.html',
     styleUrls: ['./sidenav.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
     RouterModule,
     MatListModule,

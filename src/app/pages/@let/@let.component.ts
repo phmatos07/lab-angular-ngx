@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { User } from './user';
 
@@ -7,6 +7,7 @@ import { User } from './user';
     imports: [CommonModule],
     selector: 'let',
     templateUrl: './@let.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./@let.component.scss']
 })
 export class LetComponent {

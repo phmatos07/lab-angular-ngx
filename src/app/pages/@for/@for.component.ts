@@ -1,8 +1,9 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, OnInit, signal, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'for',
   templateUrl: './@for.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./@for.component.scss']
 })
 export class ForComponent implements OnInit {

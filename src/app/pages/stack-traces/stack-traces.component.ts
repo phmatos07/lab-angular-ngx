@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
-import { ResourceIdDirective } from 'src/app/directives/resource-id.directive';
+import { ResourceIdDirective } from '../../directives/resource-id.directive';
 import { StackTracesService } from './stack-traces.service';
 
 @Component({
     selector: 'lab-stack-traces',
     templateUrl: './stack-traces.component.html',
     styleUrls: ['./stack-traces.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         MatButtonModule,
         ResourceIdDirective
