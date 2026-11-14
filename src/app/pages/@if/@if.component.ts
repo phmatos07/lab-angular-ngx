@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 
@@ -6,7 +6,7 @@ import { MatInputModule } from '@angular/material/input';
     imports: [FormsModule, MatInputModule],
     selector: 'if',
     templateUrl: './@if.component.html',
-    changeDetection: ChangeDetectionStrategy.Eager,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     styleUrls: ['./@if.component.scss']
 })
 export class IfComponent {

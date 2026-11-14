@@ -1,8 +1,8 @@
 <mat-nav-list>
-  @for ( route of ROUTES; track  route) {
+  @for (route of ROUTES; track  route) {
     <mat-list-item>
       <a
-        [idQa]="getElementName(route.path)"
+        [idQa]="route.path | getElementName"
         matListItemTitle
         routerLink="{{ route.path }}"
         routerLinkActive="active"
