@@ -10,7 +10,7 @@ import { TypePersontEnum } from './type-client.enum';
 })
 export class SwitchComponent implements OnInit {
   typePerson = TypePersontEnum.FISICA;
-  time = 3000;
+  readonly time = 3000;
 
   ngOnInit(): void {
     setTimeout(() => {
