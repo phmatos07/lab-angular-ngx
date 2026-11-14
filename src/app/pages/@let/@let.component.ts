@@ -1,23 +1,20 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { of } from 'rxjs';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { User } from './user';
 
 @Component({
-  standalone: true,
-  imports: [CommonModule],
-  selector: 'let',
-  templateUrl: './@let.component.html',
-  styleUrls: ['./@let.component.scss'],
+    imports: [CommonModule],
+    selector: 'let',
+    templateUrl: './@let.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    styleUrls: ['./@let.component.scss']
 })
 export class LetComponent {
-  users$ = of([
+  users$: Observable<User[]> = of([
     { name: 'John', surname: 'Smith' },
     { name: 'Phelipe', surname: 'Matos' },
     { name: 'João', surname: 'Silva' },
     { name: 'Maria', surname: 'Santos' },
   ]);
-
-  trackBy(index: number, user: any): number | string {
-    return index ? index : user.name;
-  }
 }

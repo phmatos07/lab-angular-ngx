@@ -1,8 +1,16 @@
 import { Routes } from '@angular/router';
 
+export const MAIN_ROUTE_NAME = 'home';
+
 export const ROUTES: Routes = [
   {
     path: '',
+    title: 'Home',
+    loadComponent: () =>
+      import('./pages/home/home.component').then((mod) => mod.HomeComponent),
+  },
+  {
+    path: MAIN_ROUTE_NAME,
     title: 'Home',
     loadComponent: () =>
       import('./pages/home/home.component').then((mod) => mod.HomeComponent),

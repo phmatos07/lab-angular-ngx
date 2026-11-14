@@ -1,12 +1,12 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 
 @Component({
-  standalone: true,
   selector: 'for',
   templateUrl: './@for.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./@for.component.scss']
 })
-export class ForComponent implements OnInit {
+export class ForComponent {
   list = signal([
     {
       title: 'Item 01',
@@ -21,8 +21,4 @@ export class ForComponent implements OnInit {
       text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, tenetur, omnis labore minima ducimus quasi, non repellat aut voluptatem corrupti placeat velit! Aperiam repellendus quasi, dicta explicabo enim non tempore.',
     },
   ]);
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

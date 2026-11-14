@@ -2,7 +2,7 @@
 
 @if (users) {
     <ul>
-    @for (user of users; track trackBy) {
+    @for (user of users; track user.name) {
         <li>Hello, {{ user.name }} {{ user.surname }}</li>
     }
     </ul>
