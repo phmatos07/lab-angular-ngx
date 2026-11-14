@@ -1,8 +1,8 @@
-import { Component, EventEmitter, Output, signal, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Output, signal } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { ResourceIdDirective } from '../directives/resource-id.directive';
-import { PROJECT_NAME } from '../models/default-data.const';
+import { ResourceIdDirective } from '../shared/directives/resource-id.directive';
+import { PROJECT_NAME } from '../shared/models/default-data.const';
 
 @Component({
     selector: 'lab-header',

@@ -1,7 +1,7 @@
 import { loadRemoteModule } from '@angular-architects/native-federation';
 import { NgComponentOutlet } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit, signal, Type } from '@angular/core';
-import { REMOTE_NAME } from '../../models/default-data.const';
+import { REMOTE_NAME } from '../../shared/models/default-data.const';
 
 @Component({
     imports: [NgComponentOutlet],

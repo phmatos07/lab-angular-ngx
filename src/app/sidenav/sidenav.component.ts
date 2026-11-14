@@ -4,7 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { Route, RouterModule } from '@angular/router';
 import { ROUTES } from '../app.routes';
-import { ResourceIdDirective } from '../directives/resource-id.directive';
+import { ResourceIdDirective } from '../shared/directives/resource-id.directive';
 import { GetElementNamePipe } from './get-element-name.pipe';
 
 @Component({

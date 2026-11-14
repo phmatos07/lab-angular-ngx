@@ -1,6 +1,6 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
-import { ResourceIdDirective } from '../../directives/resource-id.directive';
+import { ResourceIdDirective } from '../../shared/directives/resource-id.directive';
 import { StackTracesService } from './stack-traces.service';
 
 @Component({
