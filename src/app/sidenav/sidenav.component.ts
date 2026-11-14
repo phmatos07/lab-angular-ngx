@@ -1,4 +1,3 @@
-import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,13 +11,12 @@ import { ResourceIdDirective } from '../directives/resource-id.directive';
     templateUrl: './sidenav.component.html',
     styleUrls: ['./sidenav.component.scss'],
     imports: [
-        NgFor,
-        RouterModule,
-        MatListModule,
-        MatIconModule,
-        MatDividerModule,
-        ResourceIdDirective
-    ]
+    RouterModule,
+    MatListModule,
+    MatIconModule,
+    MatDividerModule,
+    ResourceIdDirective
+]
 })
 export class SidenavComponent {
 

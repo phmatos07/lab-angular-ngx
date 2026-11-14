@@ -1,10 +1,12 @@
 <mat-nav-list>
-  <mat-list-item *ngFor=" let route of ROUTES;">
-    <a
-      [idQa]="getElementName(route.path)"
-      matListItemTitle
-      routerLink="{{ route.path }}"
-      routerLinkActive="active"
-    >{{ route.title }}</a>
-  </mat-list-item>
+  @for ( route of ROUTES; track  route) {
+    <mat-list-item>
+      <a
+        [idQa]="getElementName(route.path)"
+        matListItemTitle
+        routerLink="{{ route.path }}"
+        routerLinkActive="active"
+      >{{ route.title }}</a>
+    </mat-list-item>
+  }
 </mat-nav-list>

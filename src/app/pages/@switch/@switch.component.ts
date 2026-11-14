@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
 import { TypePersontEnum } from './type-client.enum';
 
 @Component({
-    imports: [CommonModule],
+    imports: [],
     selector: 'switch',
     templateUrl: './@switch.component.html',
     styleUrls: ['./@switch.component.scss']
