@@ -5,15 +5,14 @@ import { ResourceIdDirective } from '../directives/resource-id.directive';
 import { PROJECT_NAME } from '../models/default-data.const';
 
 @Component({
-  selector: 'lab-header',
-  standalone: true,
-  imports: [
-    MatToolbarModule,
-    MatIconModule,
-    ResourceIdDirective
-  ],
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+    selector: 'lab-header',
+    imports: [
+        MatToolbarModule,
+        MatIconModule,
+        ResourceIdDirective
+    ],
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
 

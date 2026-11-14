@@ -4,14 +4,13 @@ import { ResourceIdDirective } from 'src/app/directives/resource-id.directive';
 import { StackTracesService } from './stack-traces.service';
 
 @Component({
-  selector: 'lab-stack-traces',
-  standalone: true,
-  templateUrl: './stack-traces.component.html',
-  styleUrls: ['./stack-traces.component.scss'],
-  imports: [
-    MatButtonModule,
-    ResourceIdDirective
-  ]
+    selector: 'lab-stack-traces',
+    templateUrl: './stack-traces.component.html',
+    styleUrls: ['./stack-traces.component.scss'],
+    imports: [
+        MatButtonModule,
+        ResourceIdDirective
+    ]
 })
 export class StackTracesComponent {
 

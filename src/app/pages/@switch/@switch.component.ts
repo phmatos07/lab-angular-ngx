@@ -3,11 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { TypePersontEnum } from './type-client.enum';
 
 @Component({
-  standalone: true,
-  imports: [CommonModule],
-  selector: 'switch',
-  templateUrl: './@switch.component.html',
-  styleUrls: ['./@switch.component.scss'],
+    imports: [CommonModule],
+    selector: 'switch',
+    templateUrl: './@switch.component.html',
+    styleUrls: ['./@switch.component.scss']
 })
 export class SwitchComponent implements OnInit {
   typePerson = TypePersontEnum.FISICA;

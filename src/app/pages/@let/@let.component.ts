@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 import { of } from 'rxjs';
 
 @Component({
-  standalone: true,
-  imports: [CommonModule],
-  selector: 'let',
-  templateUrl: './@let.component.html',
-  styleUrls: ['./@let.component.scss'],
+    imports: [CommonModule],
+    selector: 'let',
+    templateUrl: './@let.component.html',
+    styleUrls: ['./@let.component.scss']
 })
 export class LetComponent {
   users$ = of([

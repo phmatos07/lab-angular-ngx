@@ -8,18 +8,17 @@ import { ROUTES } from '../app.routes';
 import { ResourceIdDirective } from '../directives/resource-id.directive';
 
 @Component({
-  selector: 'lab-sidenav',
-  standalone: true,
-  templateUrl: './sidenav.component.html',
-  styleUrls: ['./sidenav.component.scss'],
-  imports: [
-    NgFor,
-    RouterModule,
-    MatListModule,
-    MatIconModule,
-    MatDividerModule,
-    ResourceIdDirective
-  ]
+    selector: 'lab-sidenav',
+    templateUrl: './sidenav.component.html',
+    styleUrls: ['./sidenav.component.scss'],
+    imports: [
+        NgFor,
+        RouterModule,
+        MatListModule,
+        MatIconModule,
+        MatDividerModule,
+        ResourceIdDirective
+    ]
 })
 export class SidenavComponent {
 
