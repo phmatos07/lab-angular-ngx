@@ -1,7 +1,6 @@
 import { Component, OnInit, signal } from '@angular/core';
 
 @Component({
-  standalone: true,
   selector: 'for',
   templateUrl: './@for.component.html',
   styleUrls: ['./@for.component.scss']
