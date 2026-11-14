@@ -1,0 +1,5 @@
+@if (tableComponent(); as table) {
+    <ng-container *ngComponentOutlet="table; inputs: { titulo: titulo() }" />
+} @else {
+    <p>Carregando...</p>
+}

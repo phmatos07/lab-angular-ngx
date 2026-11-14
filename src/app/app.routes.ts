@@ -48,5 +48,11 @@ export const ROUTES: Routes = [
     title: '@switch',
     loadComponent: () =>
       import('./pages/@switch/@switch.component').then((mod) => mod.SwitchComponent),
-  }
+  },
+  {
+    path: 'remote',
+    title: 'Remote Component',
+    loadComponent: () =>
+      import('./pages/remote/remote.component').then((mod) => mod.RemoteComponent),
+  },
 ];

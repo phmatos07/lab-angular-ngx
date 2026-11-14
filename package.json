@@ -11,6 +11,7 @@
     "test": "ng test"
   },
   "dependencies": {
+    "@angular-architects/native-federation": "^22.2.5",
     "@angular/animations": "^22.2.6",
     "@angular/cdk": "^22.2.7",
     "@angular/common": "^22.2.6",
@@ -24,12 +25,14 @@
     "@angular/service-worker": "^22.2.6",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "^0.15.1"
+    "zone.js": "^0.15.1",
+    "es-module-shims": "^2.8.0"
   },
   "devDependencies": {
     "@angular/build": "^22.2.7",
     "@angular/cli": "~22.2.7",
     "@angular/compiler-cli": "^22.2.6",
+    "@softarc/native-federation-orchestrator": "^4.10.0",
     "http-server": "^14.1.1",
     "istanbul-lib-instrument": "^6.0.3",
     "jsdom": "^30.0.0",

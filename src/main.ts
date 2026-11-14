@@ -1,7 +1,8 @@
-import { provideZoneChangeDetection } from "@angular/core";
-import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { initFederation } from '@angular-architects/native-federation';
 
-bootstrapApplication(AppComponent, {...appConfig, providers: [provideZoneChangeDetection(), ...appConfig.providers]})
-  .catch((err) => console.error(err));
+initFederation('assets/federation.manifest.json', {
+  hostRemoteEntry: { url: "./remoteEntry.json" }
+})
+  .catch(err => console.error(err))
+  .then(_ => import('./bootstrap'))
+  .catch(err => console.error(err));
