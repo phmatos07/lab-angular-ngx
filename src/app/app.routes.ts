@@ -10,12 +10,6 @@ export const ROUTES: Routes = [
       import('./pages/home/home.component').then((mod) => mod.HomeComponent),
   },
   {
-    path: MAIN_ROUTE_NAME,
-    title: 'Home',
-    loadComponent: () =>
-      import('./pages/home/home.component').then((mod) => mod.HomeComponent),
-  },
-  {
     path: 'stack-traces',
     title: 'Rastreamento de Erros',
     loadComponent: () =>
